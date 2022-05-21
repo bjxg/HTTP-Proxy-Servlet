@@ -18,7 +18,7 @@ public class FilterConfiguration {
     public FilterRegistrationBean someFilterRegistration() {
         FilterRegistrationBean registration = new FilterRegistrationBean();
         registration.setFilter(replaceStreamFilter());
-        registration.addUrlPatterns("/*");
+        registration.addUrlPatterns("/proxy/*");
         registration.setName("streamFilter");
         return registration;
     }
